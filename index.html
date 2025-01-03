@@ -238,6 +238,39 @@
             transform: scale(1.05);
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
         }
+        /* Scroll Down Button Styling */
+    .scroll-btn {
+        display: inline-block;
+        margin-top: 1rem;
+        text-decoration: none;
+        color: var(--text-color);
+        background: transparent;
+        border: 2px solid var(--primary-color);
+        padding: 0.8rem 1.5rem;
+        border-radius: 50px;
+        font-size: 1rem;
+        font-weight: bold;
+        transition: all 0.3s ease;
+        animation: bounce 2s infinite;
+    }
+    
+    .scroll-btn:hover {
+        background: var(--primary-color);
+        color: var(--secondary-color);
+        transform: scale(1.1);
+    }
+    
+    @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+            transform: translateY(0);
+        }
+        40% {
+            transform: translateY(-10px);
+        }
+        60% {
+            transform: translateY(-5px);
+        }
+    }
     </style>
 </head>
 <body>
@@ -245,6 +278,8 @@
         <h1>IBRAHIM OMAR SALIM</h1>
         <p>Software Developer | Web Developer | IT Enthusiast</p>
         <a href="tel:+254704685252">Hire Me</a>
+        <a href="#about" class="scroll-btn">Scroll Down to View More</a>
+
     </header>
 
     <section id="about">
