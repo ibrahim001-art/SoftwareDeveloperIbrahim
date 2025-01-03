@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Services - Ibrahim Omar Salim</title>
+    <style>
+        /* Root Variables for Consistency */
+        :root {
+            --primary-color: #00d4ff;
+            --secondary-color: #23272A;
+            --accent-color: #2C2F33;
+            --text-color: #FFFFFF;
+            --font-family: 'Poppins', sans-serif;
+        }
+
+        /* Reset & Base Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(to right, #00d4ff, #008aff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: textGlow 2s ease-in-out infinite alternate;
+        }
+
+        ul {
+            list-style: none;
+            margin: 2rem auto;
+            padding: 0;
+            max-width: 800px;
+        }
+
+        ul li {
+            background-color: var(--accent-color);
+            padding: 1rem;
+            margin: 0.5rem 0;
+            border-radius: 10px;
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        ul li:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 212, 255, 0.4);
+        }
+
+        .btn-container {
+            margin-top: 2rem;
+        }
+
+        .btn {
+            text-decoration: none;
+            color: var(--text-color);
+            background: var(--primary-color);
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: bold;
+            margin: 0 1rem;
+            box-shadow: 0 5px 15px rgba(0, 212, 255, 0.5);
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: scale(1.1);
+            background: #008aff;
+            box-shadow: 0 8px 20px rgba(0, 138, 255, 0.5);
+        }
+
+        /* Animations */
+        @keyframes textGlow {
+            from {
+                text-shadow: 0 0 10px rgba(0, 212, 255, 0.6);
+            }
+            to {
+                text-shadow: 0 0 20px rgba(0, 212, 255, 1);
+            }
+        }
+
+        section {
+            opacity: 0;
+            transform: translateY(100px) scale(0.9);
+            transition: all 0.6s ease-out;
+            padding: 5rem 2rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        section.visible {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Our Services</h1>
+    <ul>
+        <li>eCitizen Services (SHA, NSSF, Passport Application, KRA PIN Registration, Good Conduct, NTSA Services...etc)</li>
+        <li>KRA iTax Services (Tax Returns, PIN Application, Tax Compliance Certificate)</li>
+        <li>KUCCPS Course Application and Revision, HELB Loan Application, KCSE Certificate Replacement...etc</li>
+    </ul>
+    <div class="btn-container">
+        <a href="index.html" class="btn">Go Back</a>
+        <a href="tel:+254704685252" class="btn">Hire Me</a>
+    </div>
+</body>
+</html>
